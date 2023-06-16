@@ -1,4 +1,8 @@
+"use client"
 import '../styles/globals.css'
+import Navbar from '@/components/Navbar'
+import { ThemeProvider } from "next-themes"
+import {Providers} from "./providers"
 
 export default function RootLayout({
   children,
@@ -6,13 +10,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html lang="en" suppressHydrationWarning>
       <head />
-      <body>{children}</body>
+      <body>
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
+      </body>
     </html>
   )
 }
