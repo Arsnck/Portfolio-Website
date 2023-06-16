@@ -4,6 +4,7 @@ import {Link} from "react-scroll/modules"
 import { useTheme} from "next-themes"
 import {RiMoonFill, RiSunLine} from "react-icons/ri"
 import {IoMdMenu, IoMdClose} from "react-icons/io"
+import dynamic from 'next/dynamic'
 
 interface NavItem{
     label: string
@@ -24,15 +25,15 @@ const NAV_ITEMS: Array<NavItem> = [
         page: "projects",
     }, 
 ]
-
 const navbar = () => {
     const {systemTheme, theme, setTheme} = useTheme()
     const currentTheme = theme === "system" ? systemTheme : theme
-    // const currentTheme = theme
+    // const currentTheme = systemTheme
     const [navbar, setNavbar] = useState(false)
   return (
-    <header className='w-full mx-auto px-4 bg-white shadow fixed top-0 z-50 dark:bg-stone-900 dark:border-b dark:border-stone-600'>
-        <div className='justify-between md:items-center md:flex'>
+    <header className='w-full mx-auto px-4 bg-white-900 shadow fixed top-0 z-50 dark:bg-stone-900 dark:border-b dark:border-stone-600'>
+        <div className='justify-between md:items-center md:flex' >
+            CURRENT THEME: {theme}
             <div>
                 <div className='md:py-5 md:block'>
                     <h2 className='text-2xl font-bold '>Nick Egorov</h2>
@@ -48,7 +49,7 @@ const navbar = () => {
                     </button>
                   ) : (
                     <button onClick={() => setTheme("dark")} className='bg-slate-100 p-2 rounded-xl'>
-                        <RiMoonFill size={25} />
+                        <RiMoonFill size={25} color='black'/>
                     </button>
                   )
                 }

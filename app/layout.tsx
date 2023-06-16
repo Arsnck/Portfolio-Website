@@ -2,7 +2,7 @@
 import '../styles/globals.css'
 import Navbar from '@/components/Navbar'
 import { ThemeProvider } from "next-themes"
-import {Providers} from "./providers"
+//import {Providers} from "./providers"
 
 export default function RootLayout({
   children,
@@ -10,13 +10,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html suppressHydrationWarning={true}>
       <head />
       <body>
-        <Providers>
+        <ThemeProvider>
           <Navbar />
           {children}
-        </Providers>
+        </ThemeProvider>
       </body>
     </html>
   )
