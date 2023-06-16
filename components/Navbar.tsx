@@ -31,19 +31,46 @@ const navbar = () => {
     // const currentTheme = systemTheme
     const [navbar, setNavbar] = useState(false)
   return (
-    <header className='w-full mx-auto px-4 bg-stone-900 shadow fixed top-0 z-50'>
+    <header className='w-full mx-auto px-4 bg-stone-900 shadow fixed top-0 z-50 sm:px-10'>
         <div className='justify-between md:items-center md:flex' >
-
             <div>
-                <div className='md:py-5 md:block'>
-                    <h2 className='text-2xl font-bold text-white' >Nick Egorov</h2>
+                <div className='flex items-center justify-between py-3'>
+                    <div className='md:py-5 md:block'>
+                        <h2 className='text-2xl font-bold text-white' >Nick Egorov</h2>
+                    </div>
+                    <div className='md:hidden'>   
+                        <button onClick={()=>setNavbar(!navbar)}>
+                            {navbar ? <IoMdClose size={30} color='white'/> : <IoMdMenu size={30} color='white'/>}
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div className='md:flex md:space-x-6 text-white'>
-                {NAV_ITEMS.map((item, idx) => {
-                    return <a key = {idx}>{item.label}</a>
-                })}
-                
+            <div>
+                <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                navbar ? "block" : "hidden"
+                }`}>
+                    <div className='items-center justify-center md:flex md:space-x-6 text-white space-y-8 md:space-y-0'>
+                        {NAV_ITEMS.map((item, idx) => {
+                            return(
+                                <Link
+                                key={idx}
+                                to={item.page}
+                                className={
+                                  "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
+                                }
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                offset={-100}
+                                duration={500}
+                                onClick={() => setNavbar(!navbar)}
+                              >
+                                {item.label}
+                              </Link>
+                            )
+                        })}               
+                    </div>
+                </div>
             </div>
         </div>
     </header>

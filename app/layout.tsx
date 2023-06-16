@@ -13,10 +13,8 @@ export default function RootLayout({
     <html className='bg-stone-800'>
       <head />
       <body>
-
           <Navbar />
           {children}
-
       </body>
     </html>
   )
