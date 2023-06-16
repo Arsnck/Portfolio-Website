@@ -10,13 +10,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html suppressHydrationWarning={true}>
+    <html className='bg-stone-800'>
       <head />
       <body>
-        <ThemeProvider>
+
           <Navbar />
           {children}
-        </ThemeProvider>
+
       </body>
     </html>
   )
