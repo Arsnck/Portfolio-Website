@@ -8,7 +8,7 @@ import {HiArrowDown} from "react-icons/hi"
 const HeroSection = () => {
   return (
     <section id="home" >
-        <div className='flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-20 md:text-left'>
+        <div className='flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-40 md:flex-row md:space-x-20 md:text-left'>
             <div className='md:w-1/3 md:mt-2'>
                 <Image className='md:mx-5 rounded-full shadow-2xl'src="/fractaltree.png" alt="" width={250} height={250}/>
             </div>
