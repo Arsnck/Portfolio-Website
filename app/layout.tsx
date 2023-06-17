@@ -3,6 +3,7 @@ import '../styles/globals.css'
 import Navbar from '@/components/Navbar'
 import { ThemeProvider } from "next-themes"
 //import {Providers} from "./providers"
+import Footer from '@/components/Footer'
 
 export default function RootLayout({
   children,
