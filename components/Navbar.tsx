@@ -35,9 +35,11 @@ const navbar = () => {
         <div className='justify-between md:items-center md:flex' >
             <div>
                 <div className='flex items-center justify-between py-3'>
+                <Link to='home' className='cursor-pointer'>
                     <div className='md:py-5 md:block'>
                         <h2 className='text-2xl font-bold text-white' >Nick Egorov</h2>
                     </div>
+                </Link>
                     <div className='md:hidden'>   
                         <button onClick={()=>setNavbar(!navbar)}>
                             {navbar ? <IoMdClose size={30} color='white'/> : <IoMdMenu size={30} color='white'/>}
@@ -52,11 +54,11 @@ const navbar = () => {
                     <div className='items-center justify-center md:flex md:space-x-6 text-white space-y-8 md:space-y-0'>
                         {NAV_ITEMS.map((item, idx) => {
                             return(
-                                <Link
+                                <Link 
                                 key={idx}
                                 to={item.page}
                                 className={
-                                  "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
+                                  "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 cursor-pointer hover:-translate-y-1 transition-transform" 
                                 }
                                 activeClass="active"
                                 spy={true}
