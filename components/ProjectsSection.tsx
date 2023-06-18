@@ -6,18 +6,18 @@ import SlideUp from './SlideUp'
 
 const projects = [
     {
-        name: "Project Name",
-        description: "This will be the description of the project. I am now adding extra words so that the paragraph looks nice on the website",
-        image: "/img1.png",
-        link: "https://google.com",
+        name: "Globe Hunter",
+        description: "An interactive game similar to GeoGuessr utilizing Google Maps Street View, Google Maps Geolocation API, and OpenWeatherMap API. Guess your location on the globe based on Google StreetView and an interavtive map of the world",
+        image: "/globehunter.png",
+        link: "https://github.com/Arsanickk/GlobeHunter",
         github: "https://github.com/Arsanickk/GlobeHunter"
     },
     {
-        name: "Project Name",
-        description: "This will be the description of the project. I am now adding extra words so that the paragraph looks nice on the website",
+        name: "GeoPassword",
+        description: "Work-in-progress project, which will generate passwords based on a location chosen on a map. Instead of memorizong a complicated password, simply generate it from a familiar location",
         image: "/img1.png",
-        link: "https://google.com",
-        github: "https://github.com/Arsanickk/GlobeHunter"
+        link: "https://github.com/Arsanickk/",
+        github: "https://github.com/Arsanickk/"
     },
 ]
 
@@ -44,7 +44,7 @@ const ProjectsSection = () => {
                                 </Link>
                             </div>
                             <div className='md:w-1/2 mt-12'>
-                                <h1 className='text-2xl font-bold mb-6'>{project.name}</h1>
+                                <h1 className='text-2xl font-bold mb-3'>{project.name}</h1>
                                 <p className='text-md leading-7 mb-4'>{project.description}</p>
                                 <div className='flex flex-row align-bottom space-x-4'>
                                     <Link href={project.github} target='_blank'>

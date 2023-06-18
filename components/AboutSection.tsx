@@ -9,6 +9,7 @@ const skills = [
     {skill:"Git"},
     {skill:"GitHub"},
     {skill:"React"},
+    {skill:"JavaScript"},
 ]
 
 const AboutSection = () => {
@@ -21,9 +22,11 @@ const AboutSection = () => {
                 <div className='flex flex-col md:flex-row space-y-10 items-stretch justify-center allign-top md-text-left md-p-4 md:space-y-0 md:space-x-10'>
                     <div className='md:w-1/2'>
                         <h1 className='text-center text-lg font-bold mb-6 md:text-left'>Get to know me</h1>
-                        <p>First paragraph: Well actually here is the information about me. Please disregard what is written uptop</p>
+                        <p>I am currently a <span className='font-semibold text-teal-500'>third-year</span> student at Indiana University Bloomington persuing
+                            a degree in Computer Science. My specialization is Software Engineering.
+                        </p>
                         <br/>
-                        <p>Second Paragraph: </p>
+                        <p>Some of my hobbies include: building computers, overclocking hardware, working on my car, playing video games, and working out. </p>
                     </div>
 
                     <div className='md:w-1/2 text-center md:text-left'>

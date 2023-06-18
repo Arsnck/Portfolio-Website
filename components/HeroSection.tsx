@@ -15,8 +15,8 @@ const HeroSection = () => {
             <div>
                 <h1 className='font-bold text-2xl mt-6 text-white'>Hi, I'm Nick </h1>
                 <p className='text-white text-lg mt-4 mb-6'>
-                    Blah blah blah here is some <span className='font-semibold text-teal-600'>super</span> interesting information about 
-                    me that will totally convince you to hire me
+                    As a dedicated <span className='font-semibold text-teal-500'>Software Engineer</span>, my focus lies in creating innovative solutions
+                     and crafting high-quality software applications.
                 </p>
                 <Link
                     to='projects'
