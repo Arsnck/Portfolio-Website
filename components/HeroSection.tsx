@@ -13,7 +13,7 @@ const HeroSection = () => {
                 <Image className='md:mx-5 rounded-full shadow-2xl'src="/fractaltree.png" alt="" width={250} height={250}/>
             </div>
             <div>
-                <h1 className='font-bold text-2xl mt-6 text-white'>Hi, I'm Nick </h1>
+                <h1 className='font-bold text-2xl mt-6 text-white'>Hi, I&apos;m Nick </h1>
                 <p className='text-white text-lg mt-4 mb-6'>
                     As a dedicated <span className='font-semibold text-teal-500'>Software Engineer</span>, my focus lies in creating innovative solutions
                      and crafting high-quality software applications.
