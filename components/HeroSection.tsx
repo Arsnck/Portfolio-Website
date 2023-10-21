@@ -40,7 +40,9 @@ const HeroSection = () => {
           offset={-100}
           duration={500}
         >
+          <div>
           <HiArrowDown size={35} className="text-white animate-bounce" />
+          </div>
         </Link>
         </div>
     </section>
