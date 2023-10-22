@@ -20,17 +20,17 @@ const HeroSection = () => {
                     As a dedicated <span className='font-semibold text-teal-500'>Software Engineer</span>, my focus lies in creating innovative solutions
                      and crafting high-quality software applications.
                 </p>
-                <Link
-                    to='projects'
-                    className='text-white font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 cursor-pointer hover:translate-y-1 transition-transform'
-                    activeClass='active'
-                    spy={true}
-                    smooth = {true}
-                    offset={-100}
-                    duration={800}
+                <div 
+                    className='text-white font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 cursor-pointer hover:translate-y-1 transition-transform inline-block' 
+                    onClick={() => scroller.scrollTo('projects', {
+                        duration: 800,
+                        delay: 0,
+                        smooth: 'true',
+                        offset: -100
+                    })}
                 >
                     Projects
-                </Link>
+                </div>
             </div>
         </div>
         <div className="flex flex-row justify-center">

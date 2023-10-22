@@ -4,6 +4,7 @@ import {Link} from "react-scroll/modules"
 import { useTheme} from "next-themes"
 import {IoMdMenu, IoMdClose} from "react-icons/io"
 import dynamic from 'next/dynamic'
+import { scroller } from 'react-scroll';
 
 interface NavItem{
     label: string
@@ -34,11 +35,13 @@ const Navbar = () => {
         <div className='justify-between md:items-center md:flex' >
             <div>
                 <div className='flex items-center justify-between py-3'>
-                <Link to='home' className='cursor-pointer'>
-                    <div className='md:py-5 md:block'>
-                        <h2 className='text-2xl font-bold text-white' >Nick Egorov</h2>
-                    </div>
-                </Link>
+                <div className='cursor-pointer md:py-5 md:block' onClick={() => scroller.scrollTo('home', {
+                    duration: 100,
+                    delay: 0,
+                    smooth: 'true'
+                    })}>
+                        <h2 className='text-2xl font-bold text-white'>Nick Egorov</h2>
+                </div>
                     <div className='md:hidden'>   
                         <button onClick={()=>setNavbar(!Navbar)}>
                             {Navbar ? <IoMdClose size={30} color='white'/> : <IoMdMenu size={30} color='white'/>}
