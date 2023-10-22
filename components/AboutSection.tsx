@@ -26,7 +26,7 @@ const AboutSection = () => {
                             a degree in Computer Science. My specialization is Software Engineering.
                         </p>
                         <br/>
-                        <p>Some of my hobbies include: building computers, overclocking hardware, working on my car, playing video games, and working out. </p>
+                        <p>Some of my hobbies include: building computers, working on my car, playing video games, and working out. </p>
                     </div>
 
                     <div className='md:w-1/2 text-center md:text-left'>

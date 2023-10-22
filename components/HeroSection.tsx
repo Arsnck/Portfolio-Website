@@ -2,8 +2,10 @@
 import { homedir } from 'os'
 import React from 'react'
 import Image from 'next/image'
-import { Link } from 'react-scroll'
+import { Link, animateScroll as scroll } from 'react-scroll'
+import { scroller } from 'react-scroll';
 import {HiArrowDown} from "react-icons/hi"
+import AboutSection from './AboutSection'
 
 const HeroSection = () => {
   return (
@@ -25,25 +27,23 @@ const HeroSection = () => {
                     spy={true}
                     smooth = {true}
                     offset={-100}
-                    duration={500}
+                    duration={800}
                 >
                     Projects
                 </Link>
             </div>
         </div>
         <div className="flex flex-row justify-center">
-        <Link
-          to="about"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-        >
-          <div>
-          <HiArrowDown size={35} className="text-white animate-bounce" />
+          <div onClick={() => {
+            scroller.scrollTo("about", {
+              offset: -100,
+              duration: 800,
+              delay: 0,
+              smooth: 'true'
+            });
+          }}>
+            <HiArrowDown size={35} className="text-white animate-bounce" />
           </div>
-        </Link>
         </div>
     </section>
   )
