@@ -9,15 +9,22 @@ const projects = [
         name: "Globe Hunter",
         description: "An interactive game similar to GeoGuessr utilizing Google Maps Street View, Google Maps Geolocation API, and OpenWeatherMap API. Guess your location on the globe based on Google StreetView and an interavtive map of the world",
         image: "/globehunter.png",
-        link: "https://github.com/ArsanickWasTaken/GlobeHunter",
-        github: "https://github.com/ArsanickWasTaken/GlobeHunter"
+        link: "https://github.com/Arsnck/GlobeHunter",
+        github: "https://github.com/Arsnck/GlobeHunter"
+    },
+    {
+        name: "Threaded File Processor",
+        description: "A Multithreaded implementation of a a file processing algorithm to count phrases in large files written in C.",
+        image: "/threads.png",
+        link: "https://github.com/Arsnck/Threaded-search",
+        github: "https://github.com/Arsnck/Threaded-search"
     },
     {
         name: "GeoPassword",
         description: "Work-in-progress project, which will generate passwords based on a location chosen on a map. Instead of memorizong a complicated password, simply generate it from a familiar location",
         image: "/img1.png",
-        link: "https://github.com/ArsanickWasTaken/",
-        github: "https://github.com/ArsanickWasTaken/"
+        link: "https://github.com/Arsnck",
+        github: "https://github.com/Arsnck"
     },
 ]
 
