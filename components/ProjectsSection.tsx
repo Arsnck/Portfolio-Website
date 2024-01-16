@@ -9,7 +9,7 @@ const projects = [
         name: "Globe Hunter",
         description: "An interactive game similar to GeoGuessr utilizing Google Maps Street View, Google Maps Geolocation API, and OpenWeatherMap API. Guess your location on the globe based on Google StreetView and an interavtive map of the world",
         image: "/globehunter.png",
-        link: "https://github.com/Arsnck/GlobeHunter",
+        link: "https://arsnck.github.io/GlobeHunter/",
         github: "https://github.com/Arsnck/GlobeHunter"
     },
     {
